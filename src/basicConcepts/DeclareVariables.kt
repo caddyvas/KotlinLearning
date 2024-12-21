@@ -92,4 +92,13 @@ fun main() {
     println()
     println(hello1)
 
+    // Lazy allows you to declare a property and initialize it lazily when it is accessed for the first time.
+    // The initialization code is executed only once, and the result is cached for subsequent accesses.
+    val lazyValue: String by lazy {
+        println("Initializing lazyValue")
+        "Lazy Value"
+    }
+
+    println(lazyValue) // prints line 97 and 98
+    println(lazyValue) // prints only 98
 }

@@ -8,7 +8,7 @@ known as anonymous class.
  */
 
 fun main() {
-    var programmer: Animal = object : Animal {
+    val programmer: Animal = object : Animal {
         override fun animalName() {
             println("I am a dog")
         }
